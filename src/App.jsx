@@ -1,12 +1,11 @@
-import Counter from "./components/counter"
 
-
-
+import LoginStatus from "./components/LoginStatus"
 
 function App() {
   return (<>
 
-    <Counter />
+    <LoginStatus isLoggedIn={true} username="tutul" notificationCount={0}/>
+    <LoginStatus isLoggedIn={false} username="tutul" notificationCount={1}/>
   </>
   )
 }
