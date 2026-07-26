@@ -1,11 +1,14 @@
 
-import LoginStatus from "./components/LoginStatus"
+import PasswordList from "./components/PasswordList"
+import ShoppingList from "./components/Shoppinglist"
+import Toggle from "./components/Toggle"
 
 function App() {
   return (<>
 
-    <LoginStatus isLoggedIn={true} username="tutul" notificationCount={0}/>
-    <LoginStatus isLoggedIn={false} username="tutul" notificationCount={1}/>
+    <Toggle/>
+    <ShoppingList/>
+    <PasswordList/>
   </>
   )
 }
