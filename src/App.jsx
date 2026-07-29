@@ -1,6 +1,7 @@
 
 import PasswordList from "./components/PasswordList"
 import ShoppingList from "./components/Shoppinglist"
+import StopWatch from "./components/StopWatch"
 import Toggle from "./components/Toggle"
 
 function App() {
@@ -9,6 +10,8 @@ function App() {
     <Toggle/>
     <ShoppingList/>
     <PasswordList/>
+  
+  <StopWatch/>
   </>
   )
 }
