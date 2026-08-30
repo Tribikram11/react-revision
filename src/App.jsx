@@ -4,6 +4,7 @@
 
 import CollapsPanel from "./components/CollapsePanel"
 import PasswordVisibilty from "./components/PasswordVisibilty"
+import FocusableForm from "./components/useref"
 
 function App() {
   // const [theme, setTheme] = useState('light')
@@ -14,8 +15,10 @@ function App() {
     
     <Page/>
     </ThemeContext.Provider> */}
-    <PasswordVisibilty/>
-    <CollapsPanel/>
+    {/* <PasswordVisibilty/>
+    <CollapsPanel/> */}
+
+    <FocusableForm/>
   </>
   )
 }
