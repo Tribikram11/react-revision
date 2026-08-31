@@ -7,6 +7,7 @@ import CollapsPanel from "./components/CollapsePanel"
 import PasswordVisibilty from "./components/PasswordVisibilty"
 import SignupForm from "./components/SignupForm"
 import UncontrlledInput from "./components/UncontrolledInput"
+import NumberStats from "./components/NumberStats"
 
 function App() {
   // const [theme, setTheme] = useState('light')
@@ -21,7 +22,8 @@ function App() {
     <CollapsPanel/> */}
 
     {/* <FocusableForm/> */}
-    <SignupForm/>
+    {/* <SignupForm/> */}
+    <NumberStats/>
     {/* <UncontrlledInput/> */}
   </>
   )
