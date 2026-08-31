@@ -2,9 +2,11 @@
 // import { createContext, useContext, useState } from "react"
 // const ThemeContext = createContext(null);
 
+import { useContext } from "react"
 import CollapsPanel from "./components/CollapsePanel"
 import PasswordVisibilty from "./components/PasswordVisibilty"
-import FocusableForm from "./components/useref"
+import SignupForm from "./components/SignupForm"
+import UncontrlledInput from "./components/UncontrolledInput"
 
 function App() {
   // const [theme, setTheme] = useState('light')
@@ -18,7 +20,9 @@ function App() {
     {/* <PasswordVisibilty/>
     <CollapsPanel/> */}
 
-    <FocusableForm/>
+    {/* <FocusableForm/> */}
+    <SignupForm/>
+    {/* <UncontrlledInput/> */}
   </>
   )
 }
@@ -53,5 +57,4 @@ function App() {
 //     <button onClick={handleClick}>change </button>
 //   </>)
 // }
-
 export default App
