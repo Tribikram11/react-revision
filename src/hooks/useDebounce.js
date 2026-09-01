@@ -9,7 +9,7 @@ function useDebounce(value, delay){
         }, delay);
 
         return () => {
-            clearInterval(timeoutid);
+            clearTimeout(timeoutid);
         }
     },[value, delay])
 

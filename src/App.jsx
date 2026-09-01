@@ -1,32 +1,40 @@
-
 // import { createContext, useContext, useState } from "react"
 // const ThemeContext = createContext(null);
 
-import { useContext } from "react"
-import CollapsPanel from "./components/CollapsePanel"
-import PasswordVisibilty from "./components/PasswordVisibilty"
-import SignupForm from "./components/SignupForm"
-import UncontrlledInput from "./components/UncontrolledInput"
-import NumberStats from "./components/NumberStats"
+import { useContext } from "react";
+import CollapsPanel from "./components/CollapsePanel";
+import PasswordVisibilty from "./components/PasswordVisibilty";
+import SignupForm from "./components/SignupForm";
+import UncontrlledInput from "./components/UncontrolledInput";
+import NumberStats from "./components/NumberStats";
+import SearchBox from "./components/SearchBox";
+import SearchableList from "./components/SearchableList";
+import { ThemeProvider } from "./components/ThemeContext";
+import ThemeToggleButton from "./components/ThemeToggleButton";
 
 function App() {
   // const [theme, setTheme] = useState('light')
 
-  return (<>
-    {/* <ThemeContext.Provider value={{theme, setTheme}}>
+  return (
+    <>
+      {/* <ThemeContext.Provider value={{theme, setTheme}}>
     <HeaderDisplay/>
     
     <Page/>
     </ThemeContext.Provider> */}
-    {/* <PasswordVisibilty/>
+      {/* <PasswordVisibilty/>
     <CollapsPanel/> */}
-
-    {/* <FocusableForm/> */}
-    {/* <SignupForm/> */}
-    <NumberStats/>
-    {/* <UncontrlledInput/> */}
-  </>
-  )
+      <ThemeProvider>
+        <ThemeToggleButton />
+      </ThemeProvider>
+      {/* <FocusableForm/> */}
+      {/* <SignupForm/> */}
+      {/* <NumberStats/> */}
+      {/* <SearchBox/> */}
+      {/* <SearchableList /> */}
+      {/* <UncontrlledInput/> */}
+    </>
+  );
 }
 
 // function HeaderDisplay() {
@@ -59,4 +67,4 @@ function App() {
 //     <button onClick={handleClick}>change </button>
 //   </>)
 // }
-export default App
+export default App;
