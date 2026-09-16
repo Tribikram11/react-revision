@@ -15,7 +15,7 @@ function ProductList() {
   const [searchItem, setSearchItem] = useState("");
 
   const debounceSearchItem = useDebounce(searchItem, 500);
-  const addItem = useContext(CartContext);
+  const {addItems} = useContext(CartContext);
 
   const filteredProducts = useMemo(() => {
     console.log("filtering...");
@@ -26,6 +26,27 @@ function ProductList() {
       product.name.toLowerCase().includes(debounceSearchItem.toLowerCase()),
     );
   }, [debounceSearchItem]);
+
+  return (
+    <>
+      <input
+        type="text"
+        placeholder="search product"
+        value={searchItem}
+        onChange={(e) => setSearchItem(e.target.value)}
+      />
+
+      <ul>
+        {filteredProducts.map((product) => (
+          <li key={product.id}>
+            <span>{product.name}</span> - {product.price}
+            <button onClick={() => addItems(product)}>add to cart</button>
+          </li>
+        ))}
+        {filteredProducts.length === 0 && <li>no products found</li>}
+      </ul>
+    </>
+  );
 }
 
 export default ProductList;
