@@ -12,11 +12,11 @@ function CartSummary() {
 
     {cart.length > 0 && (
         <ul>
-            {cart.map((item, index) => {
-                <li key={index}>
+            {cart.map((item, index) => (
+                <li key={item.id + '-' + index}>
                     {item.name} (${item.price})
                 </li>
-            })}
+            ))}
         </ul>
     )}
   </>);
