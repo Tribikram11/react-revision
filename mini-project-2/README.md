@@ -31,12 +31,6 @@ A monitoring interface built to practice foundational React patterns: component 
 #### Concepts Applied
 `Props` | `Conditional Rendering` | `List Mapping (.map)` | `Independent Component State`
 
-src/
-├── project1-student-dashboard/
-    ├── components/
-    │   ├── StudentCard.jsx       # Individual student card with isolated state
-    │   └── DashboardSummary.jsx  # Computed summary stats
-    └── App.jsx
 ---
 
 ### Project 2: Live Product Search & Cart
@@ -55,8 +49,15 @@ A small e-commerce interface demonstrating global state management, custom hook 
 
 ## 📂 Repository Structure
 
-
-   src/
+```text
+src/
+├── project1-student-dashboard/
+│   ├── components/
+│   │   ├── StudentCard.jsx       # Individual student card with isolated state
+│   │   └── DashboardSummary.jsx  # Computed summary stats
+│   └── App.jsx
+│
+└── project2-product-cart/
     ├── context/
     │   └── CartContext.jsx       # Global cart state & functions
     ├── hooks/
